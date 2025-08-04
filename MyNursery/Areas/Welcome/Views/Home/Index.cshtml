@@ -13,22 +13,20 @@
             <div class="col-lg-6 text-start px-5" style="font-family: var(--main-font);">
                 <h2 class="fw-bold" style="font-family: var(--main-font);">Start Learning With</h2>
                 <h1 class="fw-bold display-5" style="font-family: var(--main-font);">We care Child Study</h1>
-                <a href="#" class="btn btn-primary mt-3 text-white">Explore</a>
+                <a href="#" class="btn text-white me-3" style="background-color: #f39f5f;">Explore</a>
             </div>
             <img src="~/assets/images/Vector1.png" alt="Alternate Text" class="w-100 position-absolute bottom-0 mt-n4" />
         </div>
     </div>
 </section>
 
-
-
 <!-- About Section -->
-<section class="py-5 bg-light position-relative">
+<section class="py-5 position-relative" style="background-color: #FFFFFF;">
     <div class="container">
         <div class="row align-items-center">
             <!-- Image Column -->
             <div class="col-md-5 text-center mb-4 mb-md-0">
-                <div class="border border-primary rounded-4 p-2 d-inline-block" style="width: 358px; height: 368px; overflow: hidden;">
+                <div class="rounded-4 p-2 d-inline-block" style="width: 358px; height: 368px; overflow: hidden;">
                     <img src="~/images/nursery2.jpg" alt="nursery2"
                          class="img-fluid h-100 w-100" style="object-fit: cover; border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;">
                 </div>
@@ -47,7 +45,7 @@
 
                 <!-- Button + Phone -->
                 <div class="d-flex align-items-center flex-wrap gap-3">
-                    <a href="#" class="btn btn-primary text-white px-4 py-2">
+                    <a asp-controller="Home" asp-action="AboutPage" class="btn btn-primary text-white px-4 py-2">
                         <!-- Uses --primary-color -->
                         Learn More →
                     </a>
@@ -64,39 +62,49 @@
     </div>
 </section>
 
-<section class="py-5 bg-light" style="font-family: var(--main-font); color: var(--text-color);">
+<section class="wave-section">
+    
+    <!-- Vector 23 - Bottom wave -->
+    <img src="~/assets/images/Vector 23.png" alt="Bottom Wave" class="wave-img vector-23">
+
+    <!-- Vector 22 - Slightly above bottom -->
+    <img src="~/assets/images/Vector 22.png" alt="Above Bottom Wave" class="wave-img vector-22">
+</section>
+
+<section class="py-5" style="background-color: var(--extra-light-bg); font-family: var(--main-font); color: var(--text-color);">
     <div class="container text-center">
         <h2 class="fw-bold mb-5" style="font-size: 2rem;">What Makes Us Special</h2>
 
         <div class="row justify-content-center">
             <!-- Card 1 -->
             <div class="col-md-4 mb-4">
-                <div class="card text-white border-0 rounded-5 p-4" style="background-color: var(--secondary-color); border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <img src="~/images/nursery3.jpg" class="rounded-circle img-thumbnail mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid var(--secondary-color);" alt="Safe & Nurturing">
+                <div class="position-relative text-white rounded-5 overflow-hidden" style="height: 100%; min-height: 420px;">
+                    <img src="~/assets/images/Vector25.png" alt="Vector Background" style="width: 100%; height: 100%; object-fit: cover; border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;" />
+                    <div class="position-absolute top-50 start-50 translate-middle text-center p-4" style="width: 100%; font-family: var(--main-font);">
+                        <img src="~/images/nursery3.jpg" class="rounded-circle img-thumbnail mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid white;" alt="Safe & Nurturing">
                         <h5 class="fw-bold">Safe & Nurturing</h5>
                         <p class="mb-3">A loving, secure environment for every child.</p>
                         <button class="btn rounded-pill text-white" style="background-color: var(--primary-color);">&rarr;</button>
                     </div>
                 </div>
             </div>
-
             <!-- Card 2 -->
             <div class="col-md-4 mb-4">
-                <div class="card text-white border-0 rounded-5 p-4" style="background-color: var(--primary-color); border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <img src="~/images/nursery4.jpg" class="rounded-circle img-thumbnail mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid var(--primary-color);" alt="Play-Based Learning">
+                <div class="position-relative text-white rounded-5 overflow-hidden" style="height: 100%; min-height: 420px;">
+                    <img src="~/assets/images/Vector24.png" alt="Vector Background" style="width: 100%; height: 100%; object-fit: cover; border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;" />
+                    <div class="position-absolute top-50 start-50 translate-middle text-center p-4" style="width: 100%; font-family: var(--main-font);">
+                        <img src="~/images/nursery4.jpg" class="rounded-circle img-thumbnail mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid white;" alt="Play-Based Learning">
                         <h5 class="fw-bold">Play-Based Learning</h5>
                         <p class="mb-3">Learning through fun, exploration, and creativity.</p>
                         <button class="btn rounded-pill text-white" style="background-color: var(--accent-color);">&rarr;</button>
                     </div>
                 </div>
             </div>
-
             <!-- Card 3 -->
             <div class="col-md-4 mb-4">
-                <div class="card text-dark border-0 rounded-5 p-4" style="background-color: #ffffff; border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;">
-                    <div class="card-body d-flex flex-column align-items-center">
+                <div class="position-relative text-dark rounded-5 overflow-hidden" style="height: 100%; min-height: 420px;">
+                    <img src="~/assets/images/Vector26.png" alt="Vector Background" style="width: 100%; height: 100%; object-fit: cover; border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;" />
+                    <div class="position-absolute top-50 start-50 translate-middle text-center p-4" style="width: 100%; font-family: var(--main-font);">
                         <img src="~/images/nursery5.jpg" class="rounded-circle img-thumbnail mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #b28dff;" alt="Experienced Staff">
                         <h5 class="fw-bold">Experienced Staff</h5>
                         <p class="mb-3">Passionate early years professionals.</p>
@@ -107,6 +115,12 @@
         </div>
     </div>
 </section>
+
+<section class="wave-section rotate-180">
+    <img src="~/assets/images/Vector 23.png" alt="Bottom Wave" class="wave-img vector-23">
+    <img src="~/assets/images/Vector 22.png" alt="Above Bottom Wave" class="wave-img vector-22">
+</section>
+
 
 <section class="py-5 bg-white" style="font-family: var(--main-font); color: var(--text-color);">
     <div class="container">
@@ -158,6 +172,11 @@
     </div>
 </section>
 
+<section class="wave-section">
+    <img src="~/assets/images/Vector 31.png" alt="Above Bottom Wave" class="wave-img vector-22">
+    <img src="~/assets/images/Vector 30.png" alt="Bottom Wave" class="wave-img vector-23"> 
+</section>
+
 <!-- Instructor Section -->
 <section class="py-5" style="background-color: var(--light-bg); font-family: var(--main-font); color: var(--text-color);">
     <div class="container text-center">
@@ -204,95 +223,71 @@
         <p class="text-warning fw-bold" style="color: var(--primary-color);">Testimonials</p>
         <h2 class="fw-bold mb-4">Parents' Words Are The Key<br>To Happy Kids</h2>
         <div class="row justify-content-center mt-4">
-            
 
-            <div class="col-md-4 mb-4">
-                <div class="p-4 rounded text-white" style="background-color: var(--primary-color);">
-                    <div class="fs-1 mb-3">“</div>
-                    <p class="mb-3 small">
-                        “Little Sprouts has been an incredible second home for our daughter. The staff are kind, attentive, and truly passionate about early childhood education. We've seen such positive growth in her confidence and communication.”
-                    </p>
-                    <p class="fw-bold small">— Malaka Perera</p>
+            <div class="container my-5">
+                <div class="row justify-content-center">
+
+                    <div class="col-md-4 mb-4">
+                        <div class="position-relative text-center">
+                            <img src="~/assets/images/BubbleSpeechOrg.png" alt="Alternate Text" style="width: 100%; height: auto;" />
+                            <div class="position-absolute top-50 start-50 translate-middle px-3" style="font-family: var(--main-font); max-width: 80%;">
+                                <p class="mb-3 small text-white" style="line-height: 1.4; max-height: 7em; overflow: hidden;">
+                                    “Little Sprouts has been an incredible second home for our daughter. The staff are kind, attentive, and truly passionate about early childhood education. We've seen such positive growth in her confidence and communication.”
+                                </p>
+                                <p class="fw-bold small">— Malaka Perera</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="position-relative text-center">
+                            <img src="~/assets/images/BubbleSpeechLBlue.png" alt="Alternate Text" style="width: 100%; height: auto;" />
+                            <div class="position-absolute top-50 start-50 translate-middle px-3" style="font-family: var(--main-font); max-width: 80%;">
+                                <p class="mb-3 small text-white" style="line-height: 1.4; max-height: 7em; overflow: hidden;">
+                                    “Little Sprouts has been an incredible second home for our daughter. The staff are kind, attentive, and truly passionate about early childhood education. We've seen such positive growth in her confidence and communication.”
+                                </p>
+                                <p class="fw-bold small">— Malaka Perera</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="position-relative text-center">
+                            <img src="~/assets/images/BubbleSpeechDBlue.png" alt="Alternate Text" style="width: 100%; height: auto;" />
+                            <div class="position-absolute top-50 start-50 translate-middle px-3" style="font-family: var(--main-font); max-width: 80%;">
+                                <p class="mb-3 small text-white" style="line-height: 1.4; max-height: 7em; overflow: hidden;">
+                                    “Little Sprouts has been an incredible second home for our daughter. The staff are kind, attentive, and truly passionate about early childhood education. We've seen such positive growth in her confidence and communication.”
+                                </p>
+                                <p class="fw-bold small">— Malaka Perera</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="p-4 rounded text-white" style="background-color: var(--secondary-color);">
-                    <div class="fs-1 mb-3">“</div>
-                    <p class="mb-3 small">
-                        “Little Sprouts has been an incredible second home for our daughter. The staff are kind, attentive, and truly passionate about early childhood education. We've seen such positive growth in her confidence and communication.”
-                    </p>
-                    <p class="fw-bold small">— Malaka Perera</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="p-4 rounded text-white" style="background-color: var(--accent-color);">
-                    <div class="fs-1 mb-3">“</div>
-                    <p class="mb-3 small">
-                        “Little Sprouts has been an incredible second home for our daughter. The staff are kind, attentive, and truly passionate about early childhood education. We've seen such positive growth in her confidence and communication.”
-                    </p>
-                    <p class="fw-bold small">— Malaka Perera</p>
-                </div>
-            </div>
+
+
+
         </div>
     </div>
 </section>
 
-
-<div class="container my-5">
-    <div class="row justify-content-center">
-
-        <div class="col-md-4 mb-4">
-            <div class="position-relative text-center">
-                <img src="~/assets/images/BubbleSpeechOrg.png" alt="Alternate Text" style="width: 100%; height: auto;" />
-                <div class="position-absolute top-50 start-50 translate-middle px-3" style="font-family: var(--main-font); max-width: 80%;">
-                    <p class="mb-3 small text-white" style="line-height: 1.4; max-height: 7em; overflow: hidden;">
-                        “Little Sprouts has been an incredible second home for our daughter. The staff are kind, attentive, and truly passionate about early childhood education. We've seen such positive growth in her confidence and communication.”
-                    </p>
-                    <p class="fw-bold small">— Malaka Perera</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="position-relative text-center">
-                <img src="~/assets/images/BubbleSpeechLBlue.png" alt="Alternate Text" style="width: 100%; height: auto;" />
-                <div class="position-absolute top-50 start-50 translate-middle px-3" style="font-family: var(--main-font); max-width: 80%;">
-                    <p class="mb-3 small text-white" style="line-height: 1.4; max-height: 7em; overflow: hidden;">
-                        “Little Sprouts has been an incredible second home for our daughter. The staff are kind, attentive, and truly passionate about early childhood education. We've seen such positive growth in her confidence and communication.”
-                    </p>
-                    <p class="fw-bold small">— Malaka Perera</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="position-relative text-center">
-                <img src="~/assets/images/BubbleSpeechDBlue.png" alt="Alternate Text" style="width: 100%; height: auto;" />
-                <div class="position-absolute top-50 start-50 translate-middle px-3" style="font-family: var(--main-font); max-width: 80%;">
-                    <p class="mb-3 small text-white" style="line-height: 1.4; max-height: 7em; overflow: hidden;">
-                        “Little Sprouts has been an incredible second home for our daughter. The staff are kind, attentive, and truly passionate about early childhood education. We've seen such positive growth in her confidence and communication.”
-                    </p>
-                    <p class="fw-bold small">— Malaka Perera</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- Subscribe Section -->
 
+<div class="position-relative text-center" style="margin: 40px 20px;">
+    
+    <img src="assets/images/RecVector.png" alt="Subscribe Background" style="width:  800px; height: 330px; border-radius: 20px;" />
 
-<section class="py-5" style="background-color: var(--primary-color); margin: 40px 20px; font-family: var(--main-font); color: white;">
-    <div class="container text-center">
-        <p class="fw-bold">Subscribe</p>
-        <h2 class="fw-bold mb-4">Parents' Words Are The Key<br>To Happy Kids</h2>
+    <div class="position-absolute top-50 start-50 translate-middle px-3 w-100" style="font-family: var(--main-font); max-width: 700px;">
+        <p class="fw-bold text-white mb-2">Subscribe</p>
+        <h2 class="fw-bold text-white mb-4">Parents' Words Are The Key<br>To Happy Kids</h2>
+
         <form class="d-flex justify-content-center">
-            <div class="input-group w-auto">
+            <div class="input-group w-75 mx-auto">
                 <input type="email" class="form-control rounded-start" placeholder="Email Address" style="font-family: var(--main-font);">
                 <button class="btn btn-dark text-white px-4 rounded-end" type="submit">Subscribe Now</button>
             </div>
         </form>
     </div>
-</section>
+</div>
 
 
